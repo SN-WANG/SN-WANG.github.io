@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Shengning Wang (王晟宁)"
+title                    : "SN.WANG"
 title_separator          : "-"
 name                     : &name "Shengning Wang"
 description              : &description "Surrogate model, Digital twin"
