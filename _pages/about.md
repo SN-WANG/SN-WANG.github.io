@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Shengning Wang (王晟宁)'s Home Page"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
