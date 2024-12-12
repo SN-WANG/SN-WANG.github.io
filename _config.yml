@@ -22,19 +22,19 @@ repository               : "SN-WANG/SN-WANG.github.io"
 author:
   # Biographic information
   avatar           : "DrWang.png"
-  name             : "Shengning Wang"
+  name             : "Shengning Wang (王晟宁)"
   pronouns         : # example: "she/her"  
-  bio              : "Be the change you want to see in this world"
+  bio              : "Be the change you want to see in this world."
   location         : "Dalian, China"
   employer         : "Dalian University of Technology"
   uri              : # URL
   email            : "snwang2023@163.com"
 
   # Academic websites
-  arxiv            : "https://arxiv.org"
-  googlescholar    : "https://scholar.google.com"
-  impactstory      : # URL
   orcid            : "http://orcid.org"
+  googlescholar    : "https://scholar.google.com"
+  arxiv            : "https://arxiv.org"
+  impactstory      : # URL
   semantic         : # URL
   pubmed           : # URL - Update with the correct link to your profile
   researchgate     : # URL
