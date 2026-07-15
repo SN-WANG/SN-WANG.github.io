@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "个人简介 / About Me"
+seo_title: "Shengning Wang (王晟宁)"
 author_profile: true
 redirect_from: 
   - /about/

@@ -8,10 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "SN.WANG"
+title                    : "Shengning Wang (王晟宁)"
+masthead_title           : "SN.WANG"
 title_separator          : "-"
 name                     : "Shengning Wang"
-description              : "Scientific machine learning, neural operators, and predictive modeling for complex engineering systems."
+description              : "Personal academic homepage of Shengning Wang."
 url                      : https://sn-wang.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SN-WANG/SN-WANG.github.io"
@@ -96,9 +97,12 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Shengning Wang (王晟宁)"
+  links:
+    - "https://orcid.org/0009-0005-4235-9497"
+    - "https://scholar.google.com/citations?hl=zh-CN&user=wEsloLoAAAAJ"
+    - "https://github.com/SN-WANG"
 
 
 # Analytics
