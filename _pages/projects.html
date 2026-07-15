@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="notice--info">Selected sponsored research project descriptions are currently undergoing public-release review.</p>
+
+{% for post in site.projects reversed %}
+  {% include archive-single.html %}
+{% endfor %}

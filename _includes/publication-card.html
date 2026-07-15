@@ -1,0 +1,15 @@
+{% include base_path %}
+
+<article class="publication-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <h2 class="publication-card__title" itemprop="headline">
+    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+  </h2>
+  <p class="publication-card__journal"><em itemprop="isPartOf">{{ post.venue }}</em></p>
+  <p class="publication-card__meta">
+    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.publication_date }}</time>
+    <span class="publication-card__separator" aria-hidden="true">|</span>
+    {{ post.publication_type }}
+  </p>
+  <p class="publication-card__doi"><strong>DOI:</strong> <a href="https://doi.org/{{ post.doi }}" itemprop="sameAs">{{ post.doi }}</a></p>
+  <p class="publication-card__authors"><strong>Authors:</strong> <span itemprop="author">{{ post.authors }}</span></p>
+</article>

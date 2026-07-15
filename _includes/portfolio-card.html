@@ -1,0 +1,24 @@
+{% include base_path %}
+
+<article class="portfolio-card" itemscope itemtype="https://schema.org/CreativeWork">
+  <h2 class="portfolio-card__title" itemprop="headline">
+    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+  </h2>
+  <div class="portfolio-card__description" itemprop="description">{{ post.excerpt | markdownify }}</div>
+  {% if post.tags %}
+    <p class="portfolio-tags">{{ post.tags | join: " · " }}</p>
+  {% endif %}
+  {% if post.videos %}
+    <div class="portfolio-media-grid">
+      {% for video in post.videos %}
+        <figure class="portfolio-media">
+          <video controls muted loop playsinline preload="metadata" poster="{{ base_path }}{{ video.poster }}">
+            <source src="{{ base_path }}{{ video.src }}" type="video/mp4">
+            Your browser does not support embedded MP4 video.
+          </video>
+          <figcaption>{{ video.label }}</figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

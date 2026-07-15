@@ -90,6 +90,9 @@
   }
 
   img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 50% 20%;
     max-width: 175px;
     border-radius: 50%;
 
