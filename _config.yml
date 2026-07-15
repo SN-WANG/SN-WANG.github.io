@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Shengning Wang"
+title                    : "SN.WANG"
 title_separator          : "-"
 name                     : "Shengning Wang"
 description              : "Scientific machine learning, neural operators, and predictive modeling for complex engineering systems."
@@ -170,16 +170,16 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   projects:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -235,9 +235,7 @@ defaults:
       path: ""
       type: talks
     values:
-      layout: talk
       author_profile: true
-      share: true
 
 
 # Sass/SCSS

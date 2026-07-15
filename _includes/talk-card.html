@@ -1,0 +1,16 @@
+<article class="talk-card" itemscope itemtype="https://schema.org/Event">
+  <h2 class="talk-card__title" itemprop="name">{{ post.title }}</h2>
+  {% if post.date or post.type or post.venue or post.location %}
+    <p class="talk-card__meta">
+      {% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="startDate">{{ post.date | date: "%B %d, %Y" }}</time>{% endif %}
+      {% if post.type %}{% if post.date %} · {% endif %}{{ post.type }}{% endif %}
+      {% if post.venue %}{% if post.date or post.type %} · {% endif %}<span itemprop="location">{{ post.venue }}{% if post.location %}, {{ post.location }}{% endif %}</span>{% elsif post.location %}{% if post.date or post.type %} · {% endif %}<span itemprop="location">{{ post.location }}</span>{% endif %}
+    </p>
+  {% endif %}
+  {% assign talk_content = post.content | strip %}
+  {% if talk_content != "" %}
+    <div class="talk-card__description" itemprop="description">{{ post.content | markdownify }}</div>
+  {% elsif post.excerpt %}
+    <div class="talk-card__description" itemprop="description">{{ post.excerpt | markdownify }}</div>
+  {% endif %}
+</article>

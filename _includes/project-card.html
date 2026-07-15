@@ -1,0 +1,12 @@
+<article class="project-card" itemscope itemtype="https://schema.org/ResearchProject">
+  <h2 class="project-card__title" itemprop="name">{{ post.title }}</h2>
+  {% if post.partner %}
+    <p class="project-card__partner"><strong>Collaborating institution:</strong> <span itemprop="sponsor">{{ post.partner }}</span></p>
+  {% endif %}
+  {% assign project_content = post.content | strip %}
+  {% if project_content != "" %}
+    <div class="project-card__description" itemprop="description">{{ post.content | markdownify }}</div>
+  {% elsif post.excerpt %}
+    <div class="project-card__description" itemprop="description">{{ post.excerpt | markdownify }}</div>
+  {% endif %}
+</article>

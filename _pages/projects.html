@@ -5,10 +5,8 @@ permalink: /projects/
 author_profile: true
 ---
 
-{% include base_path %}
-
-<p class="notice--info">Selected sponsored research project descriptions are currently undergoing public-release review.</p>
+<p class="page-intro">Selected research projects in scientific machine learning and complex engineering systems.</p>
 
 {% for post in site.projects reversed %}
-  {% include archive-single.html %}
+  {% include project-card.html %}
 {% endfor %}

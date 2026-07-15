@@ -9,7 +9,7 @@ This repository contains the source for [sn-wang.github.io](https://sn-wang.gith
 - `_projects/`: publicly approved research projects
 - `_portfolio/`: research prototypes and media demonstrations
 - `_talks/`: talks and presentations
-- `_posts/`: blog posts
+- `_posts/`: academic and everyday blog posts
 - `images/`: portrait and image assets
 - `files/`: CV and portfolio video assets
 - `_config.yml`: site-wide identity and build settings
